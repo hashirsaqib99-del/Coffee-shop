@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Brew | Premium Coffee & Bakery</title>
+    <style>
+        /* Premium Warm Coffee Dark Theme */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Georgia', serif; }
+        body { background-color: #120c0a; color: #f4ece1; line-height: 1.6; }
+        
+        /* Header / Hero Section */
+        header {
+            background: linear-gradient(rgba(18, 12, 10, 0.75), rgba(18, 12, 10, 0.9)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 90px 20px;
+        }
+        h1 { color: #d4af37; font-size: 2.8rem; letter-spacing: 2px; margin-bottom: 10px; }
+        p.subtitle { font-size: 1.2rem; color: #e0d0c1; font-style: italic; margin-bottom: 25px; }
+        
+        /* Gold WhatsApp Button */
+        .btn-whatsapp {
+            background: linear-gradient(45deg, #d4af37, #aa7c11);
+            color: #120c0a;
+            padding: 14px 28px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            display: inline-block;
+            font-family: sans-serif;
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Container */
+        .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        h2 { text-align: center; color: #d4af37; margin-bottom: 30px; font-size: 2.2rem; border-bottom: 1px solid #3a2b25; padding-bottom: 10px; }
+
+        /* Menu Item Cards with Images */
+        .menu-card {
+            background-color: #1c1411;
+            border: 1px solid #2e201b;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: row;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .menu-img {
+            width: 35%;
+            object-fit: cover;
+        }
+
+        .menu-details {
+            padding: 20px;
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .menu-title { font-size: 1.3rem; font-weight: bold; color: #f4ece1; }
+        .menu-price { font-size: 1.2rem; color: #d4af37; font-weight: bold; font-family: sans-serif; }
+        .menu-desc { font-size: 0.95rem; color: #b09e91; font-style: italic; font-family: sans-serif; }
+
+        /* Responsive Mobile Layout */
+        @media (max-width: 600px) {
+            .menu-card { flex-direction: column; }
+            .menu-img { width: 100%; height: 180px; }
+            .menu-details { width: 100%; }
+        }
+
+        /* Contact & Hours */
+        .contact-box {
+            text-align: center;
+            background-color: #1c1411;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #2e201b;
+            margin-top: 40px;
+            font-family: sans-serif;
+        }
+        
+        footer { text-align: center; padding: 25px; color: #7a685d; font-size: 0.9rem; font-family: sans-serif; }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header>
+        <h1>ARTISAN BREW CAFE</h1>
+        <p class="subtitle">Handcrafted Coffee & Freshly Baked Goods</p>
+        <a href="https://wa.me/923000000000?text=Hi!%20I%20would%20like%20to%20place%20an%20order%20for%20pickup." class="btn-whatsapp" target="_blank">💬 Order via WhatsApp</a>
+    </header>
+
+    <!-- MENU SECTION -->
+    <div class="container">
+        <h2>Featured Menu</h2>
+
+        <!-- ITEM 1 -->
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?q=80&w=500" alt="Caramel Macchiato" class="menu-img">
+            <div class="menu-details">
+                <div class="menu-header">
+                    <span class="menu-title">Caramel Macchiato</span>
+                    <span class="menu-price">Rs. 650</span>
+                </div>
+                <p class="menu-desc">Rich espresso layered with steamed milk, vanilla syrup, and finished with a buttery caramel drizzle.</p>
+            </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=500" alt="Classic Cappuccino" class="menu-img">
+            <div class="menu-details">
+                <div class="menu-header">
+                    <span class="menu-title">Classic Cappuccino</span>
+                    <span class="menu-price">Rs. 550</span>
+                </div>
+                <p class="menu-desc">Equal parts smooth dark espresso, velvety steamed milk, and a thick layer of silky foam dusting with cocoa powder.</p>
+            </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=500" alt="Butter Croissant" class="menu-img">
+            <div class="menu-details">
+                <div class="menu-header">
+                    <span class="menu-title">Flaky Butter Croissant</span>
+                    <span class="menu-price">Rs. 400</span>
+                </div>
+                <p class="menu-desc">Baked fresh every morning—crisp and golden on the outside with soft, buttery layers on the inside.</p>
+            </div>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=500" alt="Fudge Brownie" class="menu-img">
+            <div class="menu-details">
+                <div class="menu-header">
+                    <span class="menu-title">Belgian Fudge Brownie</span>
+                    <span class="menu-price">Rs. 480</span>
+                </div>
+                <p class="menu-desc">Rich, dense dark chocolate brownie served warm, topped with sea salt flakes and melted chocolate chunks.</p>
+            </div>
+        </div>
+
+        <!-- LOCATION & HOURS -->
+        <div class="contact-box">
+            <h3 style="color: #d4af37; margin-bottom: 10px;">📍 Visit Our Cafe</h3>
+            <p>Block B, Sector F-7, Near Main Park</p>
+            <p style="margin-top: 5px;"><strong>Hours:</strong> Mon - Sun: 8:00 AM - 11:00 PM</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Artisan Brew Cafe. Designed by Your Web Solutions.</p>
+    </footer>
+
+</body>
+</html>
